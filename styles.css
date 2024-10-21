@@ -1,0 +1,125 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    color: #333;
+    padding: 20px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 150px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #89259a; 
+}
+
+
+.calculator {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #E5E5E5;
+    transition: all 0.3s ease-in-out;
+}
+
+.calculator h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #62E7B8;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    background-color: #89259A;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #A752AC;
+}
+
+
+.results {
+    margin-top: 30px;
+    background-color: #62E7B8;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.results p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+.progress-bar {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 15px;
+}
+
+.progress {
+    background-color: #FFD700; 
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

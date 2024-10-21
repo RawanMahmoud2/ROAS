@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced ROAS Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for visuals -->
+</head>
+<body>
+    <header>
+        <img src="https://cdn.prod.website-files.com/614319338322d2f96eb4dd96/62124643bd803240ec14b13a_Wuilt%20logo.svg" alt="Wuilt Logo" class="logo">
+        <h1>Advanced ROAS Calculator</h1>
+    </header>
+
+    <section class="calculator">
+        <h2>Calculate your ROAS</h2>
+        <form id="roasForm">
+            <div class="input-group">
+                <label for="adSpend">Ad Spend ($):</label>
+                <input type="number" id="adSpend" placeholder="Enter Ad Spend">
+            </div>
+            <div class="input-group">
+                <label for="revenue">Revenue ($):</label>
+                <input type="number" id="revenue" placeholder="Enter Revenue">
+            </div>
+            <div class="input-group">
+                <label for="cpc">Cost per Click (CPC) ($):</label>
+                <input type="number" id="cpc" placeholder="Enter CPC">
+            </div>
+            <div class="input-group">
+                <label for="conversionRate">Conversion Rate (%):</label>
+                <input type="number" id="conversionRate" placeholder="Enter Conversion Rate">
+            </div>
+            <div class="input-group">
+                <label for="avgOrderValue">Average Order Value ($):</label>
+                <input type="number" id="avgOrderValue" placeholder="Enter Average Order Value">
+            </div>
+
+            <button type="button" onclick="calculateROAS()">Calculate ROAS</button>
+        </form>
+
+        <div id="results" class="results">
+            <p>Return on Ad Spend (ROAS): <span id="roasResult"></span></p>
+            <div class="progress-bar">
+                <div id="roasProgress" class="progress"></div>
+            </div>
+
+            <p>Profit Margin: <span id="profitMargin"></span></p>
+            <div class="progress-bar">
+                <div id="profitProgress" class="progress"></div>
+            </div>
+
+            <p>Break-even ROAS: <span id="breakEven"></span></p>
+            
+            <canvas id="roasChart" width="400" height="200"></canvas>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
